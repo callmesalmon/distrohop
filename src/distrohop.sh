@@ -1,0 +1,34 @@
+#!/usr/bin/sh
+
+# Import config file for distrohop
+source "~/distrohop.cfg.sh"
+
+# Boring default prompt, is only activated
+# when user doesn't supply a prompt.
+DISTROHOP_DEFAULT_PROMPT="$(whoami)@$(cat /etc/hostname):$(pwd)$ "
+
+# Setup package manager, on debian:
+#     sudo apt update
+${PACKAGE_MANAGER} ${UPDATE_CMD}
+
+# Install packages, on debian:
+#     sudo apt install ${PACKAGES}
+${PACKAGE_MANAGER} ${INSTALL_CMD} ${PACKAGES}
+
+# Install packages without package manager, neovim for example:
+#     git clone https://github.com/neovim/neovim
+#     cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+for nomanage_package_cmd in "${PACKAGES_NOMANAGER_CMD[@]}"; do
+    ${nomanage_package_cmd}
+done
+
+# Setup shell, zsh for example:
+#     chsh /usr/bin/zsh
+chsh ${SHELL_OF_CHOICE}
+
+# Change PS1 to user defined PS1:
+if [ -z ${USER_PROMPT+x} ]; then
+    export PS1=${DISTROHOP_DEFAULT_PROMPT}
+else
+    export PS1=${USER_PROMPT}
+fi
