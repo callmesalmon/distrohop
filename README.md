@@ -16,7 +16,7 @@ Now that you have distrohop installed on your system, we can get on to configuri
 To configure, all you need is to open the file ``~/distrohop.cfg.sh``:
 ```sh
 vim ~/distrohop.cfg.sh # Replace "vim" with your text editor of choice, but vim
-                    # is installed on *most* systems, so it is recommended.
+                       # is installed on *most* systems, so it is recommended.
 ```
 Options are found in [CONFIG.md](/CONFIG.md).
 
