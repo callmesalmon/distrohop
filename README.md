@@ -1,6 +1,6 @@
 # distrohop - The tool of the distrohopper
 Distrohop is a tool I made for distrohopping. It just lets you quickly install everything you
-need for your new linux distro of choice. All you need is ``git``, ``python3`` and a functional
+need for your new linux distro of choice. All you need is ``git`` and a functional
 text editor (preferably ``vim``), and you can get started with distrohopping!
 
 ## Installation
