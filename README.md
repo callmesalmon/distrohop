@@ -1,7 +1,7 @@
 # distrohop - The tool of the distrohopper
 Distrohop is a tool I made for distrohopping. It just lets you quickly install everything you
 need for your new linux distro of choice. All you need is ``git`` and a functional
-text editor (preferably ``vim``), and you can get started with distrohopping!
+text editor (preferably ``vim`` or distrohops builtin editor), and you can get started with distrohopping!
 
 ## Installation
 Installing distrohopper is super-simple! All you need to do is: (but make sure that
@@ -10,6 +10,10 @@ Installing distrohopper is super-simple! All you need to do is: (but make sure t
 git clone https://callmesalmon/distrohop
 cd distrohop
 sudo ./setup.sh
+
+## NOTE: If you want to enable distrohops builtin text editor (distrohop-vine), you
+##       can instead run the setup command with the --editor flag (requires GCC):
+sudo ./setup.sh --editor
 ```
 Now that you have distrohop installed on your system, we can get on to configuring:
 
@@ -17,9 +21,8 @@ Now that you have distrohop installed on your system, we can get on to configuri
 To configure, all you need is to generate and open the file ``~/distrohop.cfg.sh``:
 ```sh
 distrohop-mkconfig
-vim ~/distrohop.cfg.sh # Replace "vim" with your text editor of choice, but vim
-                       # is installed on *most* systems (and is *awesome* :3), so 
-                       # it is recommended.
+vim            ~/distrohop.cfg.sh # If you ran "./setup.sh"
+distrohop-vine ~/distrohop.cfg.sh # If you ran "./setup.sh --editor"
 ```
 Options are found in [CONFIG.md](/CONFIG.md).
 
