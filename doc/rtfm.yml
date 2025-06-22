@@ -1,0 +1,6 @@
+roff-build:
+    use: roff
+    build: distrohop.1 /usr/local/man/man1
+man-install:
+    use: man
+    build: distrohop.1 /usr/local/man/man1

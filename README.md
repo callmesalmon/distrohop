@@ -29,3 +29,10 @@ then it is as simple as running it like so:
 ```sh
 cd ~ && sudo distrohop
 ```
+
+## Building documentation
+If you want an extensive documentation piece (that you can open with ``man``), you can
+build the documentation. You need [rtfm](https://github.com/callmesalmon/rtfm).
+```sh
+./doc.sh
+```

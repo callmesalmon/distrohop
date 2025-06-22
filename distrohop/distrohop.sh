@@ -1,7 +1,27 @@
 #!/usr/bin/sh
 
+# Check if argc > 0
+if [ $# -lt 1 ]; then
+    echo "[ERROR] Please supply a username for distrohop to configure."
+    exit 1
+fi
+
+# --help flag.
+if [ $1 == "--help" ]; then
+    echo "Distrohop is a program made for distrohopping."
+    echo "It provides a multitude of features to help your distrohopping adventure."
+    echo "If distrohop's documentation was built (with ./doc.sh), type"
+    echo "\"man distrohop\" for more extensive help."
+fi
+
+# Check if config file exists
+if [ ! -f "/home/$1/distrohop.cfg.sh" ]; then
+    echo "[ERROR] File /home/$1/distrohop.cfg.sh file found... :("
+    exit 1
+fi
+
 # Import config file for distrohop
-source "/home/$DISTROHOP_USER/distrohop.cfg.sh"
+source "/home/$1/distrohop.cfg.sh"
 
 # Boring default prompt, is only activated
 # when user doesn't supply a prompt.
