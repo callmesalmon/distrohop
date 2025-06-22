@@ -11,8 +11,9 @@ git clone https://callmesalmon/distrohop
 cd distrohop
 sudo ./setup.sh
 
-## NOTE: If you want to enable distrohops builtin text editor (distrohop-vine), you
-##       can instead run the setup command with the --editor flag (requires GCC):
+## NOTE: If you want to enable distrohops builtin text editor (distrohop-kilo, based of
+##       Antirez's text editor by the same name), you can instead run the setup command
+##       with the --editor flag (requires GCC):
 sudo ./setup.sh --editor
 ```
 Now that you have distrohop installed on your system, we can get on to configuring:

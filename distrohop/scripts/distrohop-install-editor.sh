@@ -1,7 +1,13 @@
 #!/usr/bin/sh
 
-git clone https://github.com/callmesalmon/vine vine_editor.distrohop
-cd vine_editor.distrohop
-gcc vine.c -o /usr/local/bin/distrohop-vine
+# Use snaptoken's repo, as it's basically Antirez's repo but with some
+# improvements. Thanks to Antirez, anyways, since he made original kilo.
+git clone https://github.com/snaptoken/kilo-src kilo.distrohop
+
+# Build the project to ``distrohop-kilo``
+cd kilo.distrohop
+gcc kilo.c -o /usr/local/bin/distrohop-kilo
+
+# Remove any traces of the upstream repo.
 cd ..
-rm -rf vine_editor.distrohop
+rm -rf kilo.distrohop
