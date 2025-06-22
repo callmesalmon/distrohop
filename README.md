@@ -9,13 +9,14 @@ Installing distrohopper is super-simple! All you need to do is: (but make sure t
 ```sh 
 git clone https://callmesalmon/distrohop
 cd distrohop
-./setup.sh
+sudo ./setup.sh
 ```
 Now that you have distrohop installed on your system, we can get on to configuring:
 
 ## Configuring
-To configure, all you need is to open the file ``~/distrohop.cfg.sh``:
+To configure, all you need is to generate and open the file ``~/distrohop.cfg.sh``:
 ```sh
+distrohop-mkconfig
 vim ~/distrohop.cfg.sh # Replace "vim" with your text editor of choice, but vim
                        # is installed on *most* systems (and is *awesome* :3), so 
                        # it is recommended.
