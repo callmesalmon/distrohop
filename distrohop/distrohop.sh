@@ -5,7 +5,7 @@ source "/home/$DISTROHOP_USER/distrohop.cfg.sh"
 
 # Boring default prompt, is only activated
 # when user doesn't supply a prompt.
-DISTROHOP_DEFAULT_PROMPT="$(whoami)@$(cat /etc/hostname):$(pwd)$ "
+DISTROHOP_DEFAULT_PROMPT="$DISTROHOP_USER@$(cat /etc/hostname):$(pwd)$ "
 
 # Setup package manager, on debian:
 #     sudo apt update
@@ -23,8 +23,8 @@ for nomanage_package_cmd in "${PACKAGES_NOMANAGER_CMD[@]}"; do
 done
 
 # Setup shell, zsh for example:
-#     chsh /usr/bin/zsh
-chsh ${SHELL_OF_CHOICE}
+#     chsh user -s /usr/bin/zsh
+chsh $DISTROHOP_USER -s ${SHELL_OF_CHOICE}
 
 # Change PS1 to user defined PS1:
 if [ -z ${USER_PROMPT+x} ]; then
