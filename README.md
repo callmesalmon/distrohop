@@ -20,9 +20,9 @@ Now that you have distrohop installed on your system, we can get on to configuri
 ## Configuring
 To configure, all you need is to generate and open the file ``~/distrohop.cfg.sh``:
 ```sh
-distrohop-mkconfig
-vim            ~/distrohop.cfg.sh # If you ran "./setup.sh"
-distrohop-vine ~/distrohop.cfg.sh # If you ran "./setup.sh --editor"
+distrohop-mkconfig <username>
+vim                ~/distrohop.cfg.sh # If you ran "./setup.sh"
+distrohop-vine     ~/distrohop.cfg.sh # If you ran "./setup.sh --editor"
 ```
 Options are found in [CONFIG.md](/CONFIG.md).
 
@@ -30,7 +30,7 @@ Options are found in [CONFIG.md](/CONFIG.md).
 The setup script added a file called ``distrohop`` to ``/usr/local/bin``,
 then it is as simple as running it like so:
 ```sh
-cd ~ && sudo distrohop
+cd ~ && sudo distrohop <username>
 ```
 
 ## Building documentation
