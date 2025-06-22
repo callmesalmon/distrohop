@@ -19,6 +19,9 @@ DOESN'T work on, than the systems it does work on. It basically only doesn't wor
 .B distrohop-mkconfig
 <username>
 
+.B distrohop-kilo
+<filename>
+
 .SH DISTROHOP ARGUMENTS
 
 .TP
@@ -32,6 +35,14 @@ for example this might be: john; jane or jill.
 .BR <username>
 The name of the user whose system files distrohop is configuring,
 for example this might be: john; jane or jill.
+
+.SH DISTROHOP-KILO
+
+distrohop-kilo is the builtin text editor for distrohop. It can be added
+to your distrohop installation by running ./setup.sh with the --editor
+flag enabled. It works like snaptoken's kilo fork, as the binary is identical
+and the upstream repo IS the snaptoken fork. You can see the snaptoken fork
+at: https://github.com/snaptoken/kilo-src
 
 .SH DISTROHOP CONFIG FILE
 
