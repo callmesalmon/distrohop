@@ -1,7 +1,9 @@
 # Configuration guide
 The config file is just a shell script, simple as that.
-Below are all the options for configuring (set as variables):
+Below are all the options for configuring the main script
+(set as variables):
 
+- ``DISTROHOP_USER``
 - ``PACKAGE_MANAGER`` - Your systems package manager (for example:
   archlinux: ``pacman``, debian/ubuntu/kali: ``apt/apt-get``,
   fedora/centos: ``dnf``)

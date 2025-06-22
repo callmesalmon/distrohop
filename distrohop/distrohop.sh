@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 # Import config file for distrohop
-source "~/distrohop.cfg.sh"
+source "/home/$DISTROHOP_USER/distrohop.cfg.sh"
 
 # Boring default prompt, is only activated
 # when user doesn't supply a prompt.

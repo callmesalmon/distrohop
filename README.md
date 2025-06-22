@@ -4,8 +4,9 @@ need for your new linux distro of choice. All you need is ``git`` and a function
 text editor (preferably ``vim``), and you can get started with distrohopping!
 
 ## Installation
-Installing distrohopper is super-simple! All you need to do is:
-```sh
+Installing distrohopper is super-simple! All you need to do is: (but make sure that
+``/usr/local/bin`` is in ``$PATH``)
+```sh 
 git clone https://callmesalmon/distrohop
 cd distrohop
 ./setup.sh
@@ -22,8 +23,8 @@ vim ~/distrohop.cfg.sh # Replace "vim" with your text editor of choice, but vim
 Options are found in [CONFIG.md](/CONFIG.md).
 
 ## Running
-The setup script added a file called ``distrohop`` to your home directory,
+The setup script added a file called ``distrohop`` to ``/usr/local/bin``,
 then it is as simple as running it like so:
 ```sh
-cd ~ && sudo ./distrohop
+cd ~ && sudo distrohop
 ```
