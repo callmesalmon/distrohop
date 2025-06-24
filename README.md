@@ -23,7 +23,7 @@ To configure, all you need is to generate and open the file ``~/distrohop.cfg.sh
 ```sh
 distrohop-mkconfig <username>
 vim                ~/distrohop.cfg.sh # If you ran "./setup.sh"
-distrohop-vine     ~/distrohop.cfg.sh # If you ran "./setup.sh --editor"
+distrohop-kilo     ~/distrohop.cfg.sh # If you ran "./setup.sh --editor"
 ```
 Options are found in [CONFIG.md](/CONFIG.md).
 
