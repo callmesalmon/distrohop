@@ -34,6 +34,13 @@ then it is as simple as running it like so:
 cd ~ && sudo distrohop <username>
 ```
 
+## Uninstalling
+When you're done with distrohop, it's time for distrohop to take it's farewell and meet you next time
+you... Uhhh, **distrohop**. That can easily be done with:
+```sh
+cd ~/distrohop && sudo ./clean.sh
+```
+
 ## Building documentation
 If you want an extensive documentation piece (that you can open with ``man``), you can
 build the documentation. You need [rtfm](https://github.com/callmesalmon/rtfm).
