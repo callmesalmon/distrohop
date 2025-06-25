@@ -18,7 +18,7 @@ fi
 
 # Check if config file exists
 if [ ! -f "/home/$1/distrohop.cfg.sh" ]; then
-    echo "[ERROR] File /home/$1/distrohop.cfg.sh file found... :("
+    echo "[ERROR] File /home/$1/distrohop.cfg.sh not found... :("
     exit 1
 fi
 
