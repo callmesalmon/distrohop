@@ -12,8 +12,8 @@ fi
 if [ $1 == "--help" ]; then
     echo "Distrohop is a program made for distrohopping."
     echo "It provides a multitude of features to help your distrohopping adventure."
-    echo "If distrohop's documentation was built (with ./doc.sh), type"
-    echo "\"man distrohop\" for more extensive help."
+    echo "If distrohop's documentation was built (with ./doc.sh, dependencies:"
+    echo "rtfm), type\"man distrohop\" for more extensive help."
 fi
 
 # Check if config file exists

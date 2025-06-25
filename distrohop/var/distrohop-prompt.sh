@@ -1,7 +1,11 @@
 get_shell() {
-    return $(basename $SHELL)
+    if [ -z ${SHELL}+x ]; then
+        echo "[ERROR] \$SHELL variable not defined!"
+        echo "Exiting..."
+        exit 2
+    fi
+    return $(which $SHELL)
 }
-
 
 if [ get_shell -eq "zsh" ]; then
     # {green-fg}user@platform{grey-bg}dir{transparent-bg}$
