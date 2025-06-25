@@ -21,17 +21,17 @@ Now that you have distrohop installed on your system, we can get on to configuri
 ## Configuring
 To configure, all you need is to generate and open the file ``~/distrohop.cfg.sh``:
 ```sh
-distrohop-mkconfig <username>
+hopconf <username>
 vim                ~/distrohop.cfg.sh # If you ran "./setup.sh"
-distrohop-kilo     ~/distrohop.cfg.sh # If you ran "./setup.sh --editor"
+hopkilo            ~/distrohop.cfg.sh # If you ran "./setup.sh --editor"
 ```
 Options are found in [CONFIG.md](/CONFIG.md).
 
 ## Running
-The setup script added a file called ``distrohop`` to ``/usr/local/bin``,
+The setup script added a file called ``hop`` to ``/usr/local/bin``,
 then it is as simple as running it like so:
 ```sh
-cd ~ && sudo distrohop <username>
+cd ~ && sudo hop <username>
 ```
 
 ## Uninstalling

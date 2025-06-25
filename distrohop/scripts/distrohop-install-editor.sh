@@ -6,7 +6,7 @@ git clone https://github.com/snaptoken/kilo-src kilo.upstream_repo.distrohop
 
 # Build the project to ``distrohop-kilo``
 cd kilo.upstream_repo.distrohop
-gcc kilo.c -o /usr/local/bin/distrohop-kilo
+gcc kilo.c -o /usr/local/bin/hopkilo
 
 # Remove any traces of the upstream repo.
 cd ..
