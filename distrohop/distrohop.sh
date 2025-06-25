@@ -1,5 +1,7 @@
 #!/usr/bin/sh
 
+LOCAL_BIN="local/bin"
+
 # Check if argc > 0
 if [ $# -lt 1 ]; then
     echo "[ERROR] Please supply a username for distrohop to configure."
@@ -20,12 +22,11 @@ if [ ! -f "/home/$1/distrohop.cfg.sh" ]; then
     exit 1
 fi
 
+# Import required variable files
+source "/usr/$LOCAL_BIN/var/distrohop-prompt.sh"
+
 # Import config file for distrohop
 source "/home/$1/distrohop.cfg.sh"
-
-# Boring default prompt, is only activated
-# when user doesn't supply a prompt.
-DISTROHOP_DEFAULT_PROMPT="$DISTROHOP_USER@$(cat /etc/hostname):$(pwd)$ "
 
 # Setup package manager, on debian:
 #     sudo apt update
