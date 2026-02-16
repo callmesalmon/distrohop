@@ -1,7 +1,7 @@
 # distrohop - The tool of the distrohopper
-Distrohop is a tool I made for distrohopping. It just lets you quickly install everything you
-need for your new linux distro of choice. All you need is ``git`` and a functional
-text editor (preferably ``vim`` or distrohops builtin editor), and you can get started with distrohopping!
+Distrohop is a tool (or rather a loosely connected grouping of scripts) I made for distrohopping. It just lets you
+quickly install everything you need for your new linux distro of choice. All you need is ``git`` and a functional
+text editor (preferably ``vim`` or distrohops "builtin" editor), and you can get started with distrohopping!
 
 ## Installation
 Installing distrohopper is super-simple! All you need to do is: (but make sure that
@@ -11,9 +11,9 @@ git clone https://callmesalmon/distrohop
 cd distrohop
 sudo ./setup.sh
 
-## NOTE: If you want to enable distrohops builtin text editor (distrohop-kilo, based of
-##       Antirez's text editor by the same name), you can instead run the setup command
-##       with the --editor flag (requires GCC):
+## NOTE: If you want to enable distrohops builtin text editor (distrohop-kilo, source code:
+##       https://github.com/snaptoken/kilo-src), you can instead run the setup command
+##       with the --editor flag (requires CC):
 sudo ./setup.sh --editor
 ```
 Now that you have distrohop installed on your system, we can get on to configuring:

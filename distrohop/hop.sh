@@ -10,7 +10,7 @@ fi
 
 # --help flag.
 if [ $1 == "--help" ]; then
-    echo "Distrohop is a program made for distrohopping."
+    echo "Distrohop is a tool made for distrohopping."
     echo "It provides a multitude of features to help your distrohopping adventure."
     echo "If distrohop's documentation was built (with ./doc.sh, dependencies:"
     echo "rtfm), type\"man distrohop\" for more extensive help."
